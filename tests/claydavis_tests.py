@@ -1,15 +1,6 @@
 from nose.tools import *
 from claydavis.traveler import Map, Engine, Politician
 
-# def setup():
-#     print("SETUP!")
-#
-# def teardown():
-#     print ("TEAR DOWN!")
-#
-# def test_basic():
-#     print ("I RAN!")
-
 def test_map():
     # test that map is created and chain is initialized
     # properly
@@ -31,6 +22,11 @@ def test_engine_next_hop():
     next_spot = temp_engine.next_hop(1,[1,5])
     assert_in(next_spot, range(1,5))
 
+def test_politician_speak():
+    test_range = [1,5]
+    st_pt = 1
+    clay = Politician(st_pt, test_range)
+    assert_is_instance(clay.speak(),str)
 
 def test_politician():
     test_range = [1,5]

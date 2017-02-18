@@ -4,16 +4,16 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'My Project',
-    'author': 'My Name',
-    'url': 'URL to get it at.',
-    'download_url': 'Where to download it.',
-    'author_email': 'My email.',
+    'description': 'Traveling Politician - the Clay Davis Edition',
+    'author': 'Chris Tufts',
+    'url': '',
+    'download_url': '',
+    'author_email': '',
     'version': '0.1',
-    'install_requires': ['nose'],
-    'packages': ['NAME'],
+    'install_requires': ['nose','scipy'],
+    'packages': ['claydavis'],
     'scripts': [],
-    'name': 'projectname'
+    'name': 'claydavis'
 }
 
 setup(**config)
